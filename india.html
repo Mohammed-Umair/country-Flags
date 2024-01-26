@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+        body{
+          background-color:#ffffff;
+          margin:0;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          flex-direction:column
+          
+          
+        }
+       .top{
+         height:100px;
+         width:100%;
+         background-color:#F19E4B
+       }
+         .center{
+         height:100px;
+         width:100%;
+         background-color:#FFFFFF;
+           position:relative
+       }
+       .cricle{
+         width:60px;
+         height:60px;
+         border:10px solid #00007B;
+         border-radius:50%;
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform:translate(-50%,-50%)
+       }
+       .dot{
+          width:20px;
+         height:20px;
+         border-radius:50%;
+         background-color:#00007B;
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform:translate(-50%,-50%)
+         
+       }
+       .line1{
+         width:4px;
+         height:60px;
+         background-color:#00007B;
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform:translate(-50%,-50%)
+       }
+        .line2{
+         width:4px;
+         height:62px;
+         background-color:#00007B;
+        transform:rotate(60deg);
+        margin-left:30px;
+       }
+        .line3{
+         width:4px;
+         height:62px;
+         background-color:#00007B;
+        transform:rotate(110deg);
+          margin-top:-60px;
+          margin-left:25px
+       }
+         .bottom{
+         height:100px;
+         width:100%;
+         background-color:#3F8627  }
+     </style>
+    </head>
+    <body>
+
+        <div class="top"></div>
+        <div class="center">
+            <div class="cricle">
+                <div class="dot"></div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+
+                <div class="line3"></div>
+
+            </div>
+
+        </div>
+        <div class="bottom"></div>
+    </body>
+</html>
