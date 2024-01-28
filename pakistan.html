@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+  <style>
+    body{
+      margin:0;
+      display:flex;
+      
+    }
+    .white{
+      width:30%;
+      height:100%;
+      background-color:#ffffff;
+    }
+    .green{
+       width:70%;
+      height:100%;
+      background-color:#3F8627;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .moon-container{
+      position:relative;
+      transform:rotate(-120deg)
+    }
+    .moonWhite{
+      width:80px;
+      height:80px;
+      background-color:white;
+      border-radius:50%
+    }
+    .moonGreen{
+      width:80px;
+      height:80px;
+      background-color:#3F8627;
+      border-radius:50%;
+      position:absolute;
+      top:15px;
+      
+    }
+      .star-container{
+        position: relative;
+        top: -13px;
+        left:-30px
+      }
+    .star {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 20px solid white;
+        position: relative;
+        top: 8px;
+    transform:rotate(-120deg);
+  
+      }
+      .star:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid white;
+        position: absolute;
+        top: 6px;
+        left: -10px;
+        
+      }
+  
+  
+    
+    
+  </style>
+    </head>
+    <body>
+        <div class="white"></div>
+        <div class="green">
+          <div class="moon-container">
+            <div class="moonWhite">
+            </div>
+              <div class="moonGreen">
+            </div>
+          </div>
+            <div class="star-container">
+              
+            <div class="star"></div>
+            </div>
+          
+        </div>
+    </body>
+</html>
