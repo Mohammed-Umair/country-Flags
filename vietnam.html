@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.vietnam-flag {
+  width: 300px;
+  height: 200px;
+  background-color: #dc143c; /* Red background color */
+  position: relative;
+}
+
+.vietnam-flag::before {
+  content: "\2605"; 
+  font-size: 80px;
+  color: #ffd700; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="vietnam-flag"></div>
+</body>
+</html>
