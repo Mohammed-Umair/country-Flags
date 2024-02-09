@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Philippines-flag</title>
+  <style>
+body {
+  background-color: #ddd;
+  display:flex;
+   justify-content:center;
+   align-items:center
+}
+
+#flagWrapper {
+  
+  width: 300px;
+  height: 180px;
+  position: relative;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.25);
+}
+
+#blue,
+#red {
+  height: 50%;
+}
+
+#blue {
+  background: #0038a8;
+}
+
+#red {
+  background: #ce1126;
+}
+
+#white {
+  position: relative;
+  top: -155px;
+  left:-65px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 130px 130px;
+  border-color: transparent transparent #fff transparent;
+  transform: rotate(-45deg);
+}
+
+#sun {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 60px;
+  left: 8px;
+  background: url("http://upload.wikimedia.org/wikipedia/commons/9/96/Flag_of_the_Philippines_-_cropped_sun.svg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.star-1 {
+  color: #fcd116;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  left: 3px;
+  transform: rotate(121deg);
+}
+
+.star-1::before {
+  content: "★";
+}
+
+.star-2 {
+  color: #fcd116;
+  font-size: 24px;
+  position: absolute;
+  bottom: 10px;
+  left: 3px;
+}
+
+.star-2::before {
+  content: "★";
+}
+
+.star-3 {
+  color: #fcd116;
+  font-size: 24px;
+  position: absolute;
+  top: 75px;
+  left: 68px;
+  transform: rotate(90deg);
+}
+
+.star-3::before {
+  content: "★";
+}
+
+    
+  </style>
+</head>
+<body>
+    <div id="flagWrapper">
+        <div id="blue"></div>
+        <div id="red"></div>
+        <div id="white"></div>
+        <span id="sun"></span>
+        <span class="star-1"></span>
+        <span class="star-2"></span>
+        <span class="star-3"></span>
+      </div>
+</body>
+</html>
