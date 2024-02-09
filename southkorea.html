@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>South-Korea-Flag</title>
+  <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(221, 239, 255);
+  display: grid;
+  place-items: center;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+h3 {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+}
+
+/* Main Style Stars from here  */
+.flag {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.south_korea {
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.south_korea__center_circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(#cd2e3a 50%, #0047a0 0);
+  border-radius: 1in;
+  rotate: 34deg;
+}
+
+.south_korea__center_circle::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #cd2e3a;
+  border-radius: 1in;
+  margin: 25px 0;
+  box-shadow: 50px 0 #0047a0;
+}
+
+.south_korea__strips_1,
+.south_korea__strips_2 {
+  position: absolute;
+  width: 210px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.strips {
+  display: flex;
+  gap: 4px;
+}
+
+.strips > div {
+  background-color: black;
+  width: 8px;
+  height: 100%;
+}
+
+.south_korea__strips_1 {
+  rotate: -34deg;
+}
+.south_korea__strips_2 {
+  rotate: 34deg;
+}
+
+.south_korea__invisible_brick {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background-color: white;
+  color: white;
+}
+
+.south_korea__invisible_brick:nth-of-type(1) {
+  left: 71px;
+  top: 142px;
+  rotate: -34deg;
+  box-shadow: 167px 0, 191px 0;
+}
+
+.south_korea__invisible_brick:nth-of-type(2) {
+  right: 71px;
+  top: 142px;
+  rotate: 34deg;
+  box-shadow: -11px 0, 12px 0;
+}
+
+
+  </style>
+</head>
+<body>
+    <div class="flag south_korea">
+        <div class="south_korea__center_circle"></div>
+      
+        <div class="south_korea__strips_1">
+          <div class="strips">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="strips">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      
+        <div class="south_korea__strips_2">
+          <div class="strips">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="strips">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      
+        <p class="south_korea__invisible_brick"></p>
+        <p class="south_korea__invisible_brick"></p>
+      </div>
+      
+</body>
+</html>
